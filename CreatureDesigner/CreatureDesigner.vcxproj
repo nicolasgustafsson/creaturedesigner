@@ -75,24 +75,28 @@
     <IntDir>$(SolutionDir)Intermediate\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)Bin\</OutDir>
     <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IntDir>$(SolutionDir)Intermediate\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)Bin\</OutDir>
     <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IntDir>$(SolutionDir)Intermediate\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)Bin\</OutDir>
     <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IntDir>$(SolutionDir)Intermediate\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)Bin\</OutDir>
     <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -155,15 +159,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ColorDesigner.cpp" />
-    <ClCompile Include="Designers\CreatureDesigner.cpp" />
-    <ClCompile Include="Designers\Designer.cpp" />
+    <ClCompile Include="Attribute\Attribute.cpp" />
+    <ClCompile Include="Utility\UtilityDesigners\ColorDesigner.cpp" />
+    <ClCompile Include="Creature\CreatureDesigner.cpp" />
+    <ClCompile Include="Creature\Creature.cpp" />
+    <ClCompile Include="Designer\Designer.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Operation\Operation.cpp" />
+    <ClCompile Include="Sketch\Sketch.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ColorDesigner.h" />
-    <ClInclude Include="Designers\CreatureDesigner.h" />
-    <ClInclude Include="Designers\Designer.h" />
+    <ClInclude Include="Attribute\Attribute.h" />
+    <ClInclude Include="Utility\UtilityDesigners\ColorDesigner.h" />
+    <ClInclude Include="Creature\CreatureDesigner.h" />
+    <ClInclude Include="Creature\Creature.h" />
+    <ClInclude Include="Designer\Designer.h" />
+    <ClInclude Include="Operation\Operation.h" />
+    <ClInclude Include="Sketch\Sketch.h" />
+    <ClInclude Include="Utility\Color.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Attributes\Attributes.h" />

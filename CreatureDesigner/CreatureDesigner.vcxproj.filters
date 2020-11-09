@@ -1,15 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="Attribute\Attribute.cpp" />
+    <ClCompile Include="Designer\Designer.cpp" />
+    <ClCompile Include="Operation\Operation.cpp" />
+    <ClCompile Include="Sketch\Sketch.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Designers\Designer.cpp" />
-    <ClCompile Include="Designers\CreatureDesigner.cpp" />
-    <ClCompile Include="ColorDesigner.cpp" />
+    <ClCompile Include="Creature\Creature.cpp" />
+    <ClCompile Include="Creature\CreatureDesigner.cpp" />
+    <ClCompile Include="Utility\UtilityDesigners\ColorDesigner.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Designers\Designer.h" />
-    <ClInclude Include="Designers\CreatureDesigner.h" />
-    <ClInclude Include="ColorDesigner.h" />
+    <ClInclude Include="Attribute\Attribute.h" />
+    <ClInclude Include="Designer\Designer.h" />
+    <ClInclude Include="Operation\Operation.h" />
+    <ClInclude Include="Sketch\Sketch.h" />
+    <ClInclude Include="Creature\Creature.h" />
+    <ClInclude Include="Utility\Color.h" />
+    <ClInclude Include="Creature\CreatureDesigner.h" />
+    <ClInclude Include="Utility\UtilityDesigners\ColorDesigner.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Attributes\Attributes.h" />
