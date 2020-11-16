@@ -2,6 +2,7 @@
 #include <vector>
 #include <memory>
 #include "Operation/Operation.h"
+#include <iostream>
 
 class Sketch;
 
@@ -15,6 +16,8 @@ protected:
 	}
 
 	std::vector<std::unique_ptr<Operation>> myOperations;
+
+	std::unique_ptr<Operation> myCreateOperation;
 };
 
 template<typename T>
@@ -27,17 +30,22 @@ public:
 template<typename T>
 T Designer<T>::Design(const Sketch& aSketch) const
 {
+	Sketch sketchInProgress = aSketch;
 	for (auto& operation : myOperations)
 	{
-		if (operation->IsEligible(aSketch))
+		if (operation->IsEligible(sketchInProgress))
 		{
-			//todo: do something with this?
-			Sketch wow = aSketch;
-			operation->Perform(wow);
+			operation->Perform(sketchInProgress);
 		}
 	}
 
-	//todo: actually 
-	return {};
+	//todo: handle failure gracefully
+	if (!sketchInProgress.ContainsAttribute<SDesignedObjectAttribute<T>>())
+	{
+		std::cout << "fail" << std::endl;
+		return {};
+	}
+
+	return sketchInProgress.GetAttribute<SDesignedObjectAttribute<T>>()->FinishedDesign;
 }
 

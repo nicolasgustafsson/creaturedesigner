@@ -19,6 +19,7 @@
     <ClInclude Include="Utility\Color.h" />
     <ClInclude Include="Creature\CreatureDesigner.h" />
     <ClInclude Include="Utility\UtilityDesigners\ColorDesigner.h" />
+    <ClInclude Include="Utility\Randomizer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Attributes\Attributes.h" />

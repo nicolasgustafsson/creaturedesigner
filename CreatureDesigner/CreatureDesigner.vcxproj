@@ -170,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attribute\Attribute.h" />
+    <ClInclude Include="Utility\Randomizer.h" />
     <ClInclude Include="Utility\UtilityDesigners\ColorDesigner.h" />
     <ClInclude Include="Creature\CreatureDesigner.h" />
     <ClInclude Include="Creature\Creature.h" />
