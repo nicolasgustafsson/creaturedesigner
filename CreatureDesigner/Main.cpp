@@ -18,7 +18,67 @@ int main()
 
 	//sketch.myAttributes.emplace_back(std::move(colorAttribute));
 
-    //TODO MORE CONTENT AND PATHFINDING
+
+
+
+
+
+
+
+
+    //what we need do
+    //Add more attribute and operations
+    //
+
+
+
+
+
+
+
+    /*Design creature
+    *     Figure out what creature is supposed to be
+    *         Figure out what meaningful variation between creatures is
+    *           Moves, (needs designer)
+	*           1-2 types,
+	*           Real life anchor,
+	*           Height,
+	*           Weight,
+	*           Ability,
+	*           Gender ratio,
+	*           Stats
+	*               (HP, atk, defense, sp. atk, sp. defense, speed),
+	*           Evolutions/prevolutions
+	*           Name
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //TODO: FINISH MOVE OPERATIONS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     CreatureDesigner designer;
 

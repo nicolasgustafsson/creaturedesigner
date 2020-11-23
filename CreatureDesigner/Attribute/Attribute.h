@@ -13,6 +13,7 @@ enum class EEmotion
 //or something else
 struct SAttribute
 {
+	SAttribute() = default;
 	virtual ~SAttribute() = default;
 	//Describes idea
 };

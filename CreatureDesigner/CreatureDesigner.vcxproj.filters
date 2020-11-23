@@ -9,6 +9,9 @@
     <ClCompile Include="Creature\Creature.cpp" />
     <ClCompile Include="Creature\CreatureDesigner.cpp" />
     <ClCompile Include="Utility\UtilityDesigners\ColorDesigner.cpp" />
+    <ClCompile Include="Move\MoveDesigner.cpp" />
+    <ClCompile Include="Move\Move.cpp" />
+    <ClCompile Include="Move\MoveOperation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attribute\Attribute.h" />
@@ -20,6 +23,11 @@
     <ClInclude Include="Creature\CreatureDesigner.h" />
     <ClInclude Include="Utility\UtilityDesigners\ColorDesigner.h" />
     <ClInclude Include="Utility\Randomizer.h" />
+    <ClInclude Include="Move\MoveDesigner.h" />
+    <ClInclude Include="Move\Move.h" />
+    <ClInclude Include="ElementalType.h" />
+    <ClInclude Include="Move\MoveAttribute.h" />
+    <ClInclude Include="Move\MoveOperation.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Attributes\Attributes.h" />

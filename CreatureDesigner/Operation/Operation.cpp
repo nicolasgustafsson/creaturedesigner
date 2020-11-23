@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cassert>
 #include "Utility/Randomizer.h"
+#include "Move/MoveAttribute.h"
 
 bool HsvToRgbOperation::IsEligible(const Sketch& aSketch) const
 {

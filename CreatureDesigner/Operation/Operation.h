@@ -30,4 +30,3 @@ class ColorToFinishedDesign : public Operation
 
 	virtual void Perform(Sketch& aSketch) const;
 };
-
